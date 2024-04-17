@@ -1,8 +1,0 @@
-com/example/monitoringtool/MonitoringToolApplicationTests.class
-com/example/monitoringtool/unit/controller/MonitoringResultControllerTest.class
-com/example/monitoringtool/integration/service/MonitoringJobServiceImplIntTest.class
-com/example/monitoringtool/unit/service/MonitoringResultServiceImplTest.class
-com/example/monitoringtool/integration/MongoTestContainer.class
-com/example/monitoringtool/unit/controller/MonitoringJobControllerTest.class
-com/example/monitoringtool/integration/service/MonitoringResultServiceImplIntTest.class
-com/example/monitoringtool/unit/mapper/MapperTest.class
