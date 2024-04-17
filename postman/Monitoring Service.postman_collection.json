@@ -1,0 +1,327 @@
+{
+	"info": {
+		"_postman_id": "f3656c0c-dc86-41d4-a3ea-2c0ab777823f",
+		"name": "Monitoring Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27768052"
+	},
+	"item": [
+		{
+			"name": "jobs",
+			"item": [
+				{
+					"name": "deleteJobs",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"id\": 1,\n        \"url\": \"https://www.google.com\"\n    },\n    {\n        \"id\": 2,\n        \"url\": \"https://www.linkedin.com\"\n    },\n    {\n        \"id\": 3,\n        \"url\": \"https://www.linkedin.com\"\n    },    \n    {\n        \"id\": 4,\n        \"url\": \"https://www.linkedin.com\"\n    },\n    {\n        \"id\": 5,\n        \"url\": \"https://www.linkedin.com\"\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/monitoring/jobs",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monitoring",
+								"jobs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteJob",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"id\": 1,\n        \"url\": \"https://www.google.com\"\n    },\n    {\n        \"id\": 2,\n        \"url\": \"https://www.linkedin.com\"\n    },\n    {\n        \"id\": 3,\n        \"url\": \"https://www.linkedin.com\"\n    },    \n    {\n        \"id\": 4,\n        \"url\": \"https://www.linkedin.com\"\n    },\n    {\n        \"id\": 5,\n        \"url\": \"https://www.linkedin.com\"\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/monitoring/job/c741ced3-d8c3-4973-b6a6-198c82b7d16c",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monitoring",
+								"job",
+								"c741ced3-d8c3-4973-b6a6-198c82b7d16c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "setJobs",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"id\": \"c741ced3-d8c3-4973-b6a6-198c82b7d16c\",\n        \"url\": \"https://www.google.com\"\n    },\n    {\n        \"id\": \"c741ced3-d8c3-4973-b6a6-198c82b7d162\",\n        \"url\": \"https://www.linkedin.com\"\n    },\n    {\n        \"id\": \"c741ced3-d8c3-4973-b6a6-198c82b7d16d\",\n        \"url\": \"https://www.linkedin.com\"\n    },    \n    {\n        \"id\": \"c741ced3-d8c3-4973-b6a6-198c82b7d16f\",\n        \"url\": \"https://www.linkedin.com\"\n    },\n    {\n        \"id\": \"c741ced3-d8c3-4973-b6a6-198c82b7d16a\",\n        \"url\": \"https://www.linkedin.com\"\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/monitoring/jobs",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monitoring",
+								"jobs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "setJob",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\n    {\n        \"id\": \"c741ced3-d8c3-4973-b6a6-198c82b7d16a\",\n        \"url\": \"https://www.google.com\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/monitoring/job",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monitoring",
+								"job"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getJobs",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"id\": 1,\n        \"url\": \"https://www.google.com\"\n    },\n    {\n        \"id\": 2,\n        \"url\": \"https://www.linkedin.com\"\n    },\n    {\n        \"id\": 3,\n        \"url\": \"https://www.linkedin.com\"\n    },    \n    {\n        \"id\": 4,\n        \"url\": \"https://www.linkedin.com\"\n    },\n    {\n        \"id\": 5,\n        \"url\": \"https://www.linkedin.com\"\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/monitoring/job",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monitoring",
+								"job"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "results",
+			"item": [
+				{
+					"name": "getResults",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/monitoring/result",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monitoring",
+								"result"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getResultsByStatus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/monitoring/result/status/200",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monitoring",
+								"result",
+								"status",
+								"200"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSuccessRate",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/monitoring/result/rate",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monitoring",
+								"result",
+								"rate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getResultsByJobId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/monitoring/result/id/661eab7829b2f6284790b3cf",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monitoring",
+								"result",
+								"id",
+								"661eab7829b2f6284790b3cf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getResultsBetweenDates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/monitoring/result/2024-04-16T16:46/2024-06-16T16:46",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monitoring",
+								"result",
+								"2024-04-16T16:46",
+								"2024-06-16T16:46"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getResultsByResponseTimeBigerThan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/monitoring/result/500/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monitoring",
+								"result",
+								"500",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "system.cpu.usage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/actuator/metrics/system.cpu.usage",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"actuator",
+						"metrics",
+						"system.cpu.usage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jvm.memory.used",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/actuator/metrics/jvm.memory.used",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"actuator",
+						"metrics",
+						"jvm.memory.used"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
